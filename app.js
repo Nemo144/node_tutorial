@@ -1,7 +1,13 @@
-const helpers = require("./helpers");
+//to create a server
+const http = require("http");
+const server = http.createServer((req, res) => {
+  res.end("hello world from node js");
+});
 
-const total = helpers.sum(10, 200);
+//to access the server via localhost
+server.listen(3000);
+
+const { sum } = require("./helpers");
+
+const total = sum(10, 200);
 console.log("Total:", total);
-
-// console.log("PROCESS:", process);
-//
