@@ -1,0 +1,22 @@
+{
+  "name": "node_tutorial",
+  "version": "1.0.0",
+  "description": "learning node js",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nemo144/node_tutorial.git"
+  },
+  "author": "Nnamdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nemo144/node_tutorial/issues"
+  },
+  "homepage": "https://github.com/Nemo144/node_tutorial#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

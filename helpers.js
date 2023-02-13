@@ -2,4 +2,4 @@
 
 exports.sum = (a, b) => a + b;
 
-console.log("PROCESS:", process);
+// console.log("PROCESS:", process);
