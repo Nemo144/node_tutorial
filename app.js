@@ -13,4 +13,4 @@ const fs = require("fs");
 const fileName = "target.txt";
 
 //to watch for changes in the target.txt file
-fs.watch(fileName, () => console.log(`File Changed!`));
+fs.watch(fileName, () => console.log(`File Changed in target.txt!`));
