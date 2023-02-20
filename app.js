@@ -15,13 +15,17 @@ const fileName = "target.txt";
 //to watch for changes in the target.txt file
 // fs.watch(fileName, () => console.log(`File Changed in target.txt!`));
 
-//to read a file with the readFile fs module
-fs.readFile(fileName, (err, data) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(data.toString());
-  }
-});
+// to read a file with the readFile fs module synchronously
+const data = fs.readFileSync(fileName);
+console.log(data.toString());
+
+//to read a file with the readFile fs module asynchronously
+// fs.readFile(fileName, (err, data) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(data.toString());
+//   }
+// });
 
 console.log("Node js programming");
